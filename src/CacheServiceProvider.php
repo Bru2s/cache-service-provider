@@ -24,13 +24,17 @@ class CacheServiceProvider implements ServiceProviderInterface
                 }
 
                 $cacheSettings = $app['config']['cache'];
-                $cacheClassName = sprintf('\Doctrine\Common\Cache\%sCache', $cacheSettings['adapter']);
+                $cacheClassName = sprintf('\Doctrine\Common\Cache\%sCache', ucfirst($cacheSettings['adapter']));
 
                 if (!class_exists($cacheClassName)) {
                     throw new InvalidCacheConfigException('Cache Adapter Not Supported!');
                 }
 
-                $cacheAdapter = new $cacheClassName();
+                if($cacheSettings['adapter'] == 'filesystem'){
+                    $cacheAdapter = new $cacheClassName($cacheSettings['path']);
+                }else{
+                    $cacheAdapter = new $cacheClassName();
+                }
 
                 if ($cacheSettings['connectable'] === true) {
                     $this->addConnection($cacheAdapter, $cacheSettings);
@@ -50,7 +54,7 @@ class CacheServiceProvider implements ServiceProviderInterface
         $proxy = new \Dafiti\Silex\Cache\Proxy();
         $connection = $proxy->getAdapter($cacheSettings);
 
-        $setMethod = sprintf('set%s', $cacheSettings['adapter']);
+        $setMethod = sprintf('set%s', ucfirst($cacheSettings['adapter']));
         $cacheAdapter->$setMethod($connection);
     }
 

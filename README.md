@@ -58,7 +58,7 @@ $app['config'] = [
         'adapter'       => 'Memcache',
         'host'          => '127.0.0.1',
         'port'          => 11211,
-        'connectable'   => true // If not need of one connection put FALSE
+        'connectable'   => true // If not need of one connection put FALSE (in Filesystem must be FALSE)
     ]
 ];
 

@@ -1,6 +1,6 @@
 {
   "name": "Bru2s/cache-service-provider",
-  "description": "A Silex Service Provider for Doctrine Cache",
+  "description": "Modyfication of dafiti/cache-service-provider. Filesystems support added.",
   "type": "library",
   "license": "MIT",
   "keywords": [
@@ -13,10 +13,6 @@
     {
       "name": "Łukasz Wrczycki",
       "email": "bcb@poczta.fm"
-    },    
-    {
-      "name": "Pedro Ribeiro da Silva Neto",
-      "email": "pedro.neto@dafiti.com.br"
     }
   ],
   "minimum-stability": "dev",

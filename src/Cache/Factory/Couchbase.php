@@ -1,6 +1,6 @@
 <?php
 
-namespace Dafiti\Silex\Cache\Factory;
+namespace Bru2s\Silex\Cache\Factory;
 
 class Couchbase extends AbstractFactory
 {

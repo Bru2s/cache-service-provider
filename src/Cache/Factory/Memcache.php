@@ -1,9 +1,9 @@
 <?php
 
-namespace Dafiti\Silex\Cache\Factory;
+namespace Bru2s\Silex\Cache\Factory;
 
-use Dafiti\Silex\Exception\InvalidCacheConfig;
-use Dafiti\Silex\Exception\ModuleIsNotInstalled;
+use Bru2s\Silex\Exception\InvalidCacheConfig;
+use Bru2s\Silex\Exception\ModuleIsNotInstalled;
 
 class Memcache extends AbstractFactory
 {

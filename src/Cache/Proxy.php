@@ -1,8 +1,8 @@
 <?php
 
-namespace Dafiti\Silex\Cache;
+namespace Bru2s\Silex\Cache;
 
-use Dafiti\Silex\Exception\InvalidCacheConfig;
+use Bru2s\Silex\Exception\InvalidCacheConfig;
 
 class Proxy
 {
@@ -18,7 +18,7 @@ class Proxy
      */
     public function getAdapter(array $params)
     {
-        $class = sprintf('\Dafiti\Silex\Cache\Factory\%s', $params['adapter']);
+        $class = sprintf('\Bru2s\Silex\Cache\Factory\%s', $params['adapter']);
         if (!class_exists($class)) {
             throw new InvalidCacheConfig('');
         }

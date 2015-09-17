@@ -1,6 +1,6 @@
 <?php
 
-namespace Dafiti\Silex\Exception;
+namespace Bru2s\Silex\Exception;
 
 use Exception;
 

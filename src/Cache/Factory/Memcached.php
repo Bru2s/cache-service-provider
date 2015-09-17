@@ -1,8 +1,8 @@
 <?php
 
-namespace Dafiti\Silex\Cache\Factory;
+namespace Bru2s\Silex\Cache\Factory;
 
-use Dafiti\Silex\Exception\InvalidCacheConfig;
+use Bru2s\Silex\Exception\InvalidCacheConfig;
 
 class Memcached extends AbstractFactory
 {

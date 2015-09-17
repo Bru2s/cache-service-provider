@@ -1,8 +1,8 @@
 <?php
 
-namespace Dafiti\Silex\Cache\Factory;
+namespace Bru2s\Silex\Cache\Factory;
 
-use Dafiti\Silex\Exception\ModuleIsNotInstalled;
+use Bru2s\Silex\Exception\ModuleIsNotInstalled;
 
 abstract class AbstractFactory implements Factorable
 {

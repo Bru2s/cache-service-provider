@@ -1,5 +1,5 @@
 {
-  "name": "Bru2s/cache-service-provider",
+  "name": "bru2s/cache-service-provider",
   "description": "Modyfication of dafiti/cache-service-provider. Filesystems support added.",
   "type": "library",
   "license": "MIT",
@@ -7,7 +7,7 @@
     "silex",
     "doctrine",
     "cache",
-    "Bru2s"
+    "bru2s"
   ],
   "authors": [
     {
@@ -27,12 +27,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Bru2s\\Silex\\": "src/"
+      "bru2s\\Silex\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Bru2s\\Silex\\": "tests/"
+      "bru2s\\Silex\\": "tests/"
     }
   }
 }

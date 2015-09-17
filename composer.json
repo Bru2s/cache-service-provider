@@ -27,12 +27,12 @@
   },
   "autoload": {
     "psr-4": {
-      "bru2s\\Silex\\": "src/"
+      "Bru2s\\Silex\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "bru2s\\Silex\\": "tests/"
+      "Bru2s\\Silex\\": "tests/"
     }
   }
 }

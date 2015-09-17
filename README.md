@@ -50,7 +50,7 @@ make && make install
 ```php
 
 use Silex\Application;
-use bru2s\Silex\CacheServiceProvider;
+use Bru2s\Silex\CacheServiceProvider;
 
 $app = new Application();
 $app['config'] = [

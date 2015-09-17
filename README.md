@@ -14,7 +14,7 @@ A [Silex](https://github.com/silexphp/Silex) Service Provider for [Doctrine Cach
 ```json
 {
     "require": {
-        "Bru2s/cache-service-provider": "dev-master"
+        "bru2s/cache-service-provider": "dev-master"
     }
 }
 ```
@@ -50,7 +50,7 @@ make && make install
 ```php
 
 use Silex\Application;
-use Bru2s\Silex\CacheServiceProvider;
+use bru2s\Silex\CacheServiceProvider;
 
 $app = new Application();
 $app['config'] = [

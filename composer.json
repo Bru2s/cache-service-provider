@@ -1,5 +1,5 @@
 {
-  "name": "dafiti/cache-service-provider",
+  "name": "Bru2s/cache-service-provider",
   "description": "A Silex Service Provider for Doctrine Cache",
   "type": "library",
   "license": "MIT",
@@ -7,9 +7,13 @@
     "silex",
     "doctrine",
     "cache",
-    "dafiti"
+    "Bru2s"
   ],
   "authors": [
+    {
+      "name": "Łukasz Wrczycki",
+      "email": "bcb@poczta.fm"
+    },    
     {
       "name": "Pedro Ribeiro da Silva Neto",
       "email": "pedro.neto@dafiti.com.br"
@@ -27,12 +31,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Dafiti\\Silex\\": "src/"
+      "Bru2s\\Silex\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Dafiti\\Silex\\": "tests/"
+      "Bru2s\\Silex\\": "tests/"
     }
   }
 }
